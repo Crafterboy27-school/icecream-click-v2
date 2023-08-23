@@ -5,11 +5,23 @@ var save = {
   
 }
 var saveText = ""
-var icecreamPerSecond
+var icecreamPerSecond = 0
+var clickPower = 1
 
 //buildings
 var buildings = {
 
+}
+
+//click icecream
+function updateIcecreamCount(){
+  document.getElementById("icecreamAmount").innerHTML = "Icecream: " + save.icecream
+}
+function changeIcecream(amount){
+  save.icecream += amount
+}
+document.getElementById("clickIcecream").onclick = ()=>{
+  changeIcecream(1*clickPower)
 }
 
 
